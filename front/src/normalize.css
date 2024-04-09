@@ -1,3 +1,8 @@
+@layer normilize, main, component, style, index;
+
+@layer normilize {
+  
+
 /* Document
    ========================================================================== */
 
@@ -892,4 +897,6 @@ input[type='number'] {
 input:-webkit-autofill {
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
 }

@@ -1,0 +1,78 @@
+$downArrowhead: url("/../public/svg/down-arrowhead.svg");
+
+.upper-heading {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+}
+
+.text-light{
+    color: #ffffff;
+    text-decoration: none;
+    .text-bold {
+        font-weight: bold;
+        color: #fff;
+    }
+}
+
+
+ .custom-select {
+     display: flex;
+     align-items: center;
+     position: relative;
+     height: 18px;
+     z-index: 10;
+   
+ }
+
+ select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0 20px 0 10px;
+
+    outline: none;
+    background: #333538 $downArrowhead no-repeat right center/10px 6px;;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.7s ease;
+
+    &#cities{
+        width: 74px;
+    }
+
+    &::-ms-expand{
+        display: none;
+    }
+
+    &:hover {
+        opacity: 0.5;
+    }
+    
+}
+
+select::after {
+    content: '\02c5';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+    background: #2b2e2e;
+    color: #fff;
+    cursor:pointer;
+    pointer-events:none;
+
+ }
+
+ label {
+    display: flex;
+    align-items: center;
+ }
+
+ .link-decor {
+    display: flex; 
+    gap: 8px; 
+    text-decoration: none;
+ }
